@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Strings</title>
+        <script>
+
+            var nome=" Jlaca_Tuga ";
+
+            //propriedade length
+            document.write(nome.length);
+            document.write("<br>");
+
+            //charAt ver o indice da letra
+            document.write(nome.charAt(6));
+            document.write("<br>");
+
+            //indexOf retorna primeira ocorrencia de um caractere
+            document.write(nome.indexOf("u"));
+            document.write("<br>");
+
+            //replace, substitui uma sequencia de caracteres por outra
+            document.write(nome.replace("Tuga", "Português"));
+            document.write("<br>");
+
+            //substr retorna sequencia de caracteres através do primeiro indice e da quantidade de caracteres a retornar
+            document.write(nome.substr(0,5));
+            document.write("<br>");
+
+            //toLowerCase muda os caracteres para minusculas
+            document.write(nome.toLowerCase()+"<br>");
+            //toUpperCase muda os caracteres para maiusculas
+            document.write(nome.toUpperCase());
+            document.write("<br>");
+
+            //trim remove as extremidades em branco se os houver das strings
+            document.write("-"+nome+"-<br>");
+            document.write("-"+nome.trim()+"-<br>");
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

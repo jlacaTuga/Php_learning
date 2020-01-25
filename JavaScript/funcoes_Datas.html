@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Datas</title>
+        <script>
+            //Data atual 07/01/2020
+            var data = new Date();
+
+            //retorna dia
+            document.write(data.getDate()+"<br>");
+
+            //retorna mês (janeiro é 0 e dezembro 11)
+            document.write(data.getMonth()+1+"<br>");
+
+            //retorna ano
+            document.write(data.getFullYear()+"<br>");
+
+            document.write(data.getDate()+"/"+data.getMonth()+1+"/"+data.getFullYear()+"<br><br><br>");
+
+            //adicionar e remover dias da data
+            document.write(data.toString());
+            //adicionar um dia
+            data.setDate(data.getDate()+1);
+            document.write("<br>"+data.toString()+"<br>");
+            data.setMonth(data.getMonth()+1);
+            document.write(data.toString()+"<br>");
+            data.setFullYear(data.getFullYear()+1);
+            document.write(data.toString()+"<br><br><br>");
+
+            //ver quantos dias são entre duas datas:
+            // 15/01/2017 e 23/02/2017 (mes vai de 0 a 11)
+            var data1=new Date(2017,0,15);
+            var data2=new Date(2017,1,23);
+            document.write(data1.toString()+"<br>");
+            document.write(data2.toString()+"<br>");
+            //converter datas para algo que se possa calcular
+            document.write(data1.getTime()+"   milisegundos de 01/Jan/1970 até 15/Jan/2017<br>");
+            document.write(data2.getTime()+"   milisegundos de 01/Jan/1970 até 23/Fev/2017<br>");
+            document.write(data1.getTime()-data2.getTime()+" milisegundos entre as duas datas<br>");
+            //para diferença não dar negativa (valor absoluto)
+            document.write(Math.abs(data1.getTime()-data2.getTime())+" milisegundos entre as duas datas<br>");
+            //diferença em dias
+            //Dia tem 24h, hora tem 60mn, minuto tem 60 seg, segundo tem 1000 milisegundos
+
+            document.write("Um dia tem "+1*24*60*60*1000+" milisegundos<br>");
+            document.write(Math.round(Math.abs(data1.getTime()-data2.getTime())/86400000)+" dias de diferença entre as datas!!");
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

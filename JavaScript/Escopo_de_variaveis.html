@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Escopo de variaveis</title>
+        <script>
+            //O JavaScript tem 3 escopos: global, função e bloco
+
+            var serie="Friends";
+
+            //escopo de bloco
+            if(true){
+                //Em bloco o operador var cria uma elevação a global
+                var serie2="Game of Thrones";
+
+                document.write(serie);
+                document.write("<br>");
+            }
+            document.write(serie2);
+            document.write("<br>");
+
+            function x() {
+                //Na função o operador var apenas crias variavel local
+                var serie3="The Walking Dead";
+
+                document.write(serie);
+                document.write("<br>");
+
+                document.write(serie2);
+            }
+            x();
+            document.write("<br>");
+
+            //A variavel serie3 foi criada localmente, não acessa
+            document.write(serie3);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

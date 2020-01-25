@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eventos de teclado</title>
+        <script>
+            function acao1() {
+                alert("Evento disparado com onkeydown");
+                }
+            function acao2() {
+                alert("Evento disparado com onkeyup");
+            }
+            function acao3() {
+                alert("Evento disparado com onkeypress(tem de ser tecla de caractere");
+            }
+        </script>
+    </head>
+    <body>
+        <input onkeydown="acao1()" type="text">
+        <input onkeyup="acao2()" type="text">
+        <input onkeyup="acao3()" type="text">
+    </body>
+</html>
